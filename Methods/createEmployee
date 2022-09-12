@@ -1,0 +1,17 @@
+const manager = require('./Employee/Manager');
+const engineer = require('./Employee/Engineer');
+const intern = require('./Employee/Intern');
+
+function create(info){
+    if (info.role === "manager"){
+      return new manager(info)
+    }
+    if (info.role === "engineer"){
+        return new engineer(info)
+    }
+    if (info.role === "intern"){
+        return new intern(info)
+    }
+}
+
+module.exports = {create};
