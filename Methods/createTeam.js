@@ -1,6 +1,7 @@
-const inquirer = require('inquirer');
+
 const createEmployee = require('./createEmployee');
 const generateHTML = require( './generateHTML.js');
+const inquirer = require('inquirer');
 
 
 const questions=[
@@ -65,15 +66,14 @@ function employeeInformation(){
         employeeInformation()
     } else{ 
         console.log("All employees added")
-        // console.log(team);
-        // exports = {team};
+        
         generateHTML.writeToFile('index.html', team);
 
     }
 })
 }
 
-
+    
     const team = [];
     employeeInformation();
 

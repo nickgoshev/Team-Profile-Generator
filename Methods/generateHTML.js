@@ -59,7 +59,7 @@ file.write(openingHTML());
                 <p> ${employee.getRole()}</p>
                 <p class="border-bottom"> ${employee.getName()} </p>
               <p> Employee ID: ${employee.getId()} </p>
-              <p> Email: <a href="https://${employee.getEmail()}/" ${employee.getEmail()}</a></p>`
+              <p> Email: <a href="https://${employee.getEmail()}/"> ${employee.getEmail()}</a></p>`
               )
             file.write(employeeSpecific(employee));
         })
